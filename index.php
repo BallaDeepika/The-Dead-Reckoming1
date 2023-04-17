@@ -23,8 +23,8 @@
           {
             $_SESSION['user_id']=$user_data['user_id'];
             //echo '<script> window.location="start.html" </script> ';
-            echo "hello3";
-           // header("Location:start.html");
+             //echo "hello3";
+           header("Location:start.html");
             die;
           }
         }

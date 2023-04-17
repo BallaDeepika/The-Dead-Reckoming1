@@ -22,7 +22,7 @@
           if($user_data['password']===$password)
           {
             $_SESSION['user_id']=$user_data['user_id'];
-            echo "<script> location.href='start.html'; </script>";
+            echo '<script> window.location="start.html" </script> ';
            // header("Location:start.html");
             die;
           }

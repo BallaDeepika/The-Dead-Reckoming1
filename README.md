@@ -69,6 +69,6 @@ LIST OF FEATURES IMPLEMENTED:
 
 DATABASE PASSWORDS :
     dbhost="localhost";
-    dbuser="root";
-    dbpass="Admin123456";
-    dbname="treasurehunt_db";
+    dbuser="id19507706_root";
+    dbpass="Admin@123456";
+    dbname="id19507706_treasurehunt_db";

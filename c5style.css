@@ -148,35 +148,35 @@
   }
  #cp1{
     font-family: 'Courier New';
-    position: relative; 
-    top: 340px;
-    left:120px;
+    position: absolute; 
+    top: 390px;
+    left:620px;
     font-size: 16px;
  }
  #cp2{
     font-family: 'Courier New';
     position: relative;
     top: 340px;
-    left: 688px;
+    left: 620px;
     font-size: 16px;
  }
  #cp3{
     font-family: 'Courier New';
     position: relative;
-    top: 485px;
-    left: 688px;
+    top: 345px;
+    left: 620px;
     font-size: 16px;
  }#cp4{
     font-family: 'Courier New';
     position: relative;
-    top: 515px;
-    left: 688px;
+    top: 355px;
+    left: 620px;
     font-size: 16px;
  }#cp5{
     font-family: 'Courier New';
     position: relative;
-    top: 5050px;
-    left: 688px;
+    top: 365px;
+    left: 625px;
     font-size: 16px;
  }
  #para{

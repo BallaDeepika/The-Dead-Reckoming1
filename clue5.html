@@ -22,14 +22,12 @@
                <input type="text" id="t3"style="width: 3%;">
                <button id="cbt" onclick="check()">Check</button>
 
-               <button id="getc" onclick="clues()">Get Clues</button>
-            <div id="para">
-               <p id="cp1" style="display: none;">" 3 4 2 " One number is correct but wrongly placed</p><br>
-               <p id="cp2"style="display: none;">" 2 7 3 " One number is correct but wrongly placed</p><br>
-               <p id="cp3"style="display: none;">" 1 6 5 " Two numbers are correct and well placed</p><br>
-               <p id="cp4"style="display: none;">" 8 5 3 " Two numbers are correct but wrongly placed</p><br>
-               <p id="cp5"style="display: none;">" 2 6 4 " Nothing is correct </p><br>
-            </div>
+               <!-- <button id="getc" onclick="clues()">Get Clues</button> -->
+               <p id="cp1">" 3 4 2 " One number is correct but wrongly placed</p><br>
+               <p id="cp2">" 2 7 3 " One number is correct but wrongly placed</p><br>
+               <p id="cp3">" 1 6 5 " Two numbers are correct and well placed</p><br>
+               <p id="cp4">" 8 5 3 " Two numbers are correct but wrongly placed</p><br>
+               <p id="cp5">" 2 6 4 " Nothing is correct </p><br>
           </div>
         </div>   
       </div>   
@@ -41,11 +39,6 @@
      document.getElementById("infp").style.display='block';
      document.getElementById("i1").style.display='none';
      document.getElementById("p1").style.display='none';
-   //   document.getElementById("cp1").style.display='none';
-   //   document.getElementById("cp2").style.display='none';
-   //   document.getElementById("cp3").style.display='none';
-   //   document.getElementById("cp4").style.display='none';
-   //   document.getElementById("cp5").style.display='none';
  });
 
  var button = document.getElementById("cbt");
@@ -54,6 +47,7 @@
      // Add your action here
      document.getElementById("infp").style.display='none';
  });
+
 
     function check(){
 
@@ -78,16 +72,7 @@
         alert("incorrect");
      }
     }
-     function clues(){
-        document.getElementById("cp1").style.display='block';
-        document.getElementById("cp2").style.display='block';
-        document.getElementById("cp3").style.display='block';
-        document.getElementById("cp4").style.display='block';
-        document.getElementById("cp5").style.display='block';
-        document.getElementById("getc").style.display='none';
 
-
-     }
       </script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>Solution</title>
+        <title>HOME</title>
         <link rel="stylesheet" href=sol.css>
     </head>
     <body>
@@ -8,14 +8,107 @@
           <div class="navbar">
             <div class="icon">
               <h2 class="logo">ENIGMA</h2>
-            </div>           
+            </div>    
           </div>
-            <div class="content" id="div1">   
-               
+            <div class="content" id="div1">
+              <img src="place.png" id="c1">
+              <img src="place.png" id="c2">
+              <img src="place.png" id="c3">
+              <img src="place.png" id="c4">
+              <img src="place.png" id="c5">
+              <img src="place.png" id="c6">
+
+              <img src="close.png" id="op1" style="display: none;">
+              <img src="close.png" id="op2" style="display: none;">
+              <img src="close.png"   id="op3" style="display: none;">
+              <img src="zombie.png" id="op4" style="display: none;">
+              <img src="close.png" id="op5" style="display: none;">
+              <img src="close.png" id="op6" style="display: none;">
+              
+              <button id="next" style="display: none;" onclick="func2()">Inject vaccine</button>
+              <p id="p1">Read the info and proceed!!</p>
+              <img src="manuscript.png" id="i2">
+              <p id="p2" style="color: whitesmoke;">Info!!</p>
+              <p id="infp" style="display: none;">Firstly, utilize the formula used to create the 1940 pandemic vaccine to develop a new vaccine for the current outbreak. Once the vaccine has been developed, load it into the medigun and identify the areas where the zombies are located. Finally, use the medigun to administer the vaccine and cure the zombies.</p>
+              
           </div>
         </div>   
       </div>   
+      <script>
+        var button = document.getElementById("i2");
+        button.addEventListener("click", function() {
+
+        document.getElementById("infp").style.display='block';
+        document.getElementById("i2").style.display='none';
+        document.getElementById("p2").style.display='none';
+      });
+        let chances=0;
+
+        var ch1=document.getElementById("c1");
+        ch1.addEventListener("click",function(){
+          document.getElementById("c1").style.display='none';
+          alert("No zombies!!");
+            document.getElementById("op1").style.display='block';
+
+        });
+
+        var ch2=document.getElementById("c2");
+        ch2.addEventListener("click",function(){
+          document.getElementById("c2").style.display='none';
+          alert("No zombies!!");
+            document.getElementById("op2").style.display='block';
+          
+       
+        });
+
+        var ch3=document.getElementById("c3");
+        ch3.addEventListener("click",function(){
+          document.getElementById("c3").style.display='none';
+         
+          
+            document.getElementById("op3").style.display='block';
+            alert("No zombies!!");
+            document.getElementById("next").style.display='block';
+          
+          
+        });
+
+        var ch4=document.getElementById("c4");
+        ch4.addEventListener("click",function(){
+          document.getElementById("c4").style.display='none';
+       
+       
+            
+          
+          
+            document.getElementById("op4").style.display='block';
+            alert("Yay! you found the zombie!!");
+            document.getElementById("next").style.display='block';
+          
       
-      </script>
+        });
+
+        var ch5=document.getElementById("c5");
+        ch5.addEventListener("click",function(){
+          document.getElementById("c5").style.display='none';
+          alert("No zombies!!");
+            document.getElementById("op5").style.display='block';
+         
+        });
+
+        var ch6=document.getElementById("c6");
+        ch6.addEventListener("click",function(){
+          document.getElementById("c6").style.display='none';
+          alert("No zombies!!");
+            document.getElementById("op6").style.display='block';
+      
+        });
+
+        function func2(){
+          alert("successfully cured!");
+          window.location="conclusion.html";
+        }
+
+      </script>    
     </body>
 </html>

@@ -11,7 +11,7 @@
             </div>    
           </div>
             <div class="content" id="div1">
-              <img src="gold chest1.png" id="c1">
+              <img src="gold chest1.png" id="c1" onclick="fun1()">
               <img src="gold chest1.png" id="c2">
               <img src="gold chest1.png" id="c3">
               <img src="gold chest1.png" id="c4">
@@ -127,6 +127,48 @@
         function func2(){
           window.location="dend1.html"
         }
+
+        function fun1(move){
+          
+          console.log("working");
+         // update the game state
+          let gameState = updateGameState(gameState, move);
+  
+        // save the game state to local storage
+        saveGameState(gameState);
+  
+        // update the UI
+        updateUI(gameState);
+  
+        }
+        // retrieve the saved game state from local storage
+        const savedState = getSavedGameState();
+
+        // if there's a saved game state, restore it
+        if (savedState) { 
+            gameState = savedState;
+             updateUI(gameState);
+        }
+    
+        function saveGameState(state) {
+              localStorage.setItem('gameState', JSON.stringify(state));
+        }
+
+        function getSavedGameState() {
+           const savedState = localStorage.getItem('gameState');
+          return savedState ? JSON.parse(savedState) : null;
+        }
+
+        function updateGameState(gameState, move) {
+  // make a copy of the game state to modify
+  const newGameState = Object.assign({}, gameState);
+
+  // update the game state based on the user's move
+  // replace this with the logic specific to your game
+
+  // return the updated game state
+  return newGameState;
+}
 
       </script>    
     </body>
